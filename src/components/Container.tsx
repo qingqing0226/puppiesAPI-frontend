@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 import { Puppy } from '../types/types';
 import Card from './Card';
 
