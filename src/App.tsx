@@ -59,7 +59,7 @@ function App() {
     if(birthRef.current) birthRef.current.value = '';
     if(imageRef.current) imageRef.current.value = '';
 
-    setShowAddForm((prev) => !prev);
+    window.location.reload();
   }
 
   return (
