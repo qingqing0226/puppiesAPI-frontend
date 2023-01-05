@@ -6,5 +6,19 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
 }
 

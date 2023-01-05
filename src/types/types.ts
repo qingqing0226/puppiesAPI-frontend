@@ -5,3 +5,10 @@ export interface Puppy {
     birthDate: string,
     image: string
 }
+
+export interface CreatePuppy {
+    breed: string,
+    name: string,
+    birthDate: string,
+    image: string
+}
