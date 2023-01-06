@@ -65,9 +65,9 @@ function App() {
   return (
     <div className="App">
       <header className='header'>
-        <h1>PuppyLand</h1>
-        <div className='btn-container'>
-          <button className='btn' onClick={(e: React.MouseEvent<HTMLButtonElement>) => handleAddbtn(e)}>Add A Puppy</button>
+        <h1 className='title'>Puppy Land</h1>
+        <div className='add-btn-container'>
+          <button className='btn add' onClick={(e: React.MouseEvent<HTMLButtonElement>) => handleAddbtn(e)}>Post my puppy</button>
         </div>
         {showAddForm && (        
           <form className='addForm' onSubmit={handleSubmit}>

@@ -1,5 +1,6 @@
 import React, {useState, useRef} from 'react'
 import { Puppy, CreatePuppy } from '../types/types';
+import '../App.css';
 
 const API_LINK = 'http://localhost:8080/api/puppies';
 interface IPuppyComponentProps {
@@ -66,8 +67,8 @@ const Card = ({puppy} : IPuppyComponentProps) => {
         }
       </div>
       <div className='btnContainer'>
-        <button className='delete' onClick={() => { handleDelete();}}>Delete</button>
-        <button className='edit' onClick={(e: React.MouseEvent<HTMLButtonElement>) => {e.stopPropagation(); e.preventDefault(); handleEdit()}}>Edit</button>
+        <button className='btn delete' onClick={() => { handleDelete();}}>Delete</button>
+        <button className='btn edit' onClick={(e: React.MouseEvent<HTMLButtonElement>) => {e.stopPropagation(); e.preventDefault(); handleEdit()}}>Edit</button>
       </div>
       {showEditForm && (        
           <form className='editForm' onSubmit={handleSubmit}>
@@ -75,7 +76,7 @@ const Card = ({puppy} : IPuppyComponentProps) => {
             <input type='text' placeholder={'name'} ref={nameRef} defaultValue={puppy.name} required />
             <input type='text' placeholder={'birthdate (yyyy-mm-dd)'} ref={birthRef} defaultValue={puppy.birthDate} required />
             <input type='text' placeholder={'image url (if empty, a random image will be added)'} ref={imageRef} defaultValue={puppy.image} />
-            <button type='submit'>Submit</button>
+            <button type='submit' className='btn'>Submit</button>
           </form>)}
     </div>
   )

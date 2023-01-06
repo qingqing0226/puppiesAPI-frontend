@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -10,15 +10,69 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F7F5EB;
+  width: 80vw;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+  width: 80vw;
+  margin: 3rem auto;
+  gap: 0.5rem;
+}
+
+.title {
+
+}
+
+.btn {
+  background-color: #A0C3D2;
+  border: none;
+  padding: 0.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .addForm {
   display: flex;
   flex-direction: column;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  cursor:pointer;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
